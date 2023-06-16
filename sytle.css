@@ -29,7 +29,6 @@ main img{
 }
 ul {
   display: flex;
-  border: 2px solid aqua;
   list-style: none;
   gap: 47px;
 }
@@ -40,8 +39,8 @@ main ul li {
 }
 .menu-mobile{
   display: none;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 20px;
   
 }
