@@ -6,56 +6,51 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./arquivos/bkg.jpg) fixed center;
-
+  background: url(./arquivos/bkg-mobile.jpg) no-repeat fixed center/cover;
 }
 /* BARRA DE NAVEGAÇÃO*/
-.container{
+.container {
   position: fixed;
   display: flex;
   width: 100%;
   align-items: center;
-  background: rgb(255,0,0,0.8);
+  background: rgb(255, 0, 0, 0.8);
 }
-.cont-bar{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-around;
+.cont-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.logo{
+.logo {
   margin: 10px;
 }
-.logo img{
+.logo img {
   max-width: 8vw;
   min-width: 80px;
 }
-.nav{
+.nav {
   margin: 10px;
   display: flex;
   justify-content: space-around;
-  gap:8vw;
-
+  gap: 8vw;
 }
-.list-buttons{
+.list-buttons {
   display: flex;
   list-style: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  
-
 }
 
-.nav a{ 
+.nav a {
   text-decoration: none;
   font-size: 2.5vw;
-  font-family: 'Carter One', cursive;
+  font-family: "Carter One", cursive;
   color: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-
 }
-.nav a:hover{
+.nav a:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
@@ -68,37 +63,33 @@ justify-content: space-around;
   transition: background 0.2s;
   border-radius: 50%;
 }
-.menu-mobile:hover{
+.menu-mobile:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 999px) {
-  
-  .list-buttons{
+  .list-buttons {
     display: none;
   }
-  .nav{
+  .nav {
     display: none;
   }
-  .cont-bar{
+  .cont-bar {
     justify-content: space-between;
   }
- 
+
   .menu-mobile {
     display: block;
   }
-  
 }
-@media (max-width:780px) {
-  .logo{
+@media (max-width: 780px) {
+  .logo {
     width: 80px;
   }
-  
 }
-@media (max-width: 830px){
-  body{
-    background-image: url(./arquivos/IMG_2691.JPEG);
-    background-position: 100vh;
-    background-attachment: fixed;
+@media (max-width: 830px) {
+  body {
+    background-image: url(./arquivos/bkg-mobile.jpg) fixed;
+    
   }
 }
