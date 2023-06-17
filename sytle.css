@@ -6,55 +6,52 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: url(./arquivos/bkg.jpg) no-repeat center center;
-}
-/* barra de navegação */
+  background: url(./arquivos/bkg.jpg) fixed;
 
-.bar {
-  position: absolute;
-  background: red;
-  width: 100%;
-  height: 140px;
-  opacity: 0.6;
-  
 }
-/* conteudo da barra */
-main {
+/* BARRA DE NAVEGAÇÃO*/
+.container{
+  position: fixed;
   display: flex;
+  width: 100%;
   align-items: center;
+  background: rgb(255,0,0,0.8);
+}
+.cont-bar{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.logo{
+  margin: 10px;
+}
+.logo img{
+  max-width: 8vw;
+  min-width: 80px;
+}
+.nav{
+  margin: 10px;
+  display: flex;
   justify-content: space-around;
+  gap:8vw;
+
 }
-main img {
-  height: 125px;
-  width: 125px;
-  z-index: 1;
-  margin: 5px;
-}
-.buttons {
-  justify-content: center;
-  width: 80%;
-  z-index: 1;
-}
-ul {
-  z-index: 1;
-  justify-content: center;
+.list-buttons{
   display: flex;
   list-style: none;
-  gap: 40px;
   
+
 }
-main ul li {
-  z-index: 1;
-  font-size: 35px;
-  font-family: "Carter One", cursive;
-  color:white;
+.nav a{ 
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-family: 'Carter One', cursive;
+  color: white;
+
 }
-/* button mobile */
+
 .menu-mobile {
-  z-index: 1;
   display: none;
   width: 60px;
   height: 60px;
@@ -66,16 +63,26 @@ main ul li {
 .menu-mobile:hover{
   background: rgba(0, 0, 0, 0.1);
 }
-/* tela mobile */
+
 @media (max-width: 999px) {
-  .buttons {
+  .list-buttons{
     display: none;
   }
-  main {
+  .nav{
+    display: none;
+  }
+  .cont-bar{
     justify-content: space-between;
   }
  
   .menu-mobile {
     display: block;
   }
+  
+}
+@media (max-width:780px) {
+  .logo{
+    width: 80px;
+  }
+  
 }
