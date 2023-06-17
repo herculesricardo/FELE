@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./arquivos/bkg.jpg) fixed;
+  background: url(./arquivos/bkg.jpg) fixed center;
 
 }
 /* BARRA DE NAVEGAÇÃO*/
@@ -65,6 +65,7 @@ justify-content: space-around;
 }
 
 @media (max-width: 999px) {
+  
   .list-buttons{
     display: none;
   }
@@ -85,4 +86,11 @@ justify-content: space-around;
     width: 80px;
   }
   
+}
+@media (max-width: 830px){
+  body{
+    background-image: url(./arquivos/IMG_2691.JPEG);
+    background-position: 100vh;
+    background-attachment: fixed;
+  }
 }
